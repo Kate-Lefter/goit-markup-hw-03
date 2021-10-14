@@ -1,0 +1,259 @@
+:root {
+  --header-color: #ffffff;
+  --line-header-color: #ececec;
+  --logo-color: #000000;
+  --second-logo-color: #ffffff;
+  --accent-color: #2196f3;
+  --second-accent-color: #2f303a;
+  --third-accent-color: #f5f4fa;
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  outline: 2px solid tomato;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  outline: 2px solid tomato;
+}
+
+.link {
+  text-decoration: none;
+  outline: 2px solid tomato;
+}
+/*------------СКРЫТЬ ТЕКСТ----------*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  outline: 2px solid tomato;
+  cursor: pointer;
+}
+
+.primary {
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  color: var(--header-color);
+  outline: 2px solid tomato;
+}
+.secondary .btn {
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  background-color: var(--third-accent-color);
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+  color: var(--second-logo-color);
+  outline: 2px solid tomato;
+}
+
+.active {
+  color: var(--accent-color);
+  outline: 2px solid tomato;
+}
+
+/*-------------------------------------------------------header---------------------------------------------------*/
+.body-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  outline: 2px solid tomato;
+}
+.second-body-logo {
+  font-style: bolt;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--second-logo-color);
+  outline: 2px solid tomato;
+}
+.third-body-logo {
+  font-style: bolt;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-color);
+  outline: 2px solid tomato;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+  outline: 2px solid tomato;
+}
+
+.list .link.current {
+  color: var(--accent-color);
+  outline: 2px solid tomato;
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  outline: 2px solid tomato;
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
+  outline: 2px solid tomato;
+}
+
+/*-------------------------------------------hero----------------------------------------------*/
+.main-section {
+  background-color: var(--second-accent-color);
+  outline: 2px solid tomato;
+}
+.main-slogan {
+  font-weight: 900;
+  font-style: black;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+  outline: 2px solid tomato;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  outline: 2px solid tomato;
+}
+.aside-us {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+.aside-team {
+  letter-spacing: 0.03em;
+  background-color: var(--third-accent-color);
+  outline: 2px solid tomato;
+}
+
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+.content-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--second-text-color);
+  outline: 2px solid tomato;
+}
+.aside-services {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+.aside-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  outline: 2px solid tomato;
+}
+/*------------------------------------------footer----------------------------------------------*/
+
+.address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  background-color: var(--second-accent-color);
+  outline: 2px solid tomato;
+}
+
+.footer-address {
+  font-style: inherit;
+  outline: 2px solid tomato;
+}
+.aside-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-logo-color);
+  outline: 2px solid tomato;
+}
+
+.footer-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  outline: 2px solid tomato;
+}
