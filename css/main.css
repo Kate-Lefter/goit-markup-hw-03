@@ -18,6 +18,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -30,9 +31,18 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.menu-list {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   outline: 2px solid tomato;
 }
 
@@ -64,7 +74,12 @@ body {
 }
 
 .primary {
+  margin-left: 500px;
+  padding: 10px, 32px;
+  width: 200px;
+  height: 50px;
   border-radius: 4px;
+  border: 1px solid var(--accent-color)
   letter-spacing: 0.06em;
   background: var(--accent-color);
   color: var(--header-color);
@@ -90,15 +105,26 @@ body {
 }
 
 /*-------------------------------------------------------header---------------------------------------------------*/
+.header {
+  background-color: var(--header-color);
+  padding-top: 23px;
+  padding-bottom: 25px;
+}
+
 .body-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  margin-right: 90px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   outline: 2px solid tomato;
 }
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .second-body-logo {
   font-style: bolt;
   font-size: 26px;
@@ -128,9 +154,14 @@ body {
   outline: 2px solid tomato;
 }
 
-.list .link.current {
+.list .link .current {
   color: var(--accent-color);
   outline: 2px solid tomato;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-contact {
@@ -141,6 +172,10 @@ body {
   color: var(--second-text-color);
   outline: 2px solid tomato;
 }
+.header-connect {
+  margin-left: auto;
+}
+
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
