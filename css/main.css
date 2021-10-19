@@ -102,11 +102,20 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
-.body-logo {
+.body-logo-head{
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin-right: 90px;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  color: var(--accent-color);
+}
+
+.body-logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -130,6 +139,9 @@ body {
 .addres-logo {
   margin-bottom: 20px;
 }
+.list .link.current {
+  color: var(--accent-color);
+}
 
 .menu-link {
   display: block;
@@ -147,9 +159,6 @@ body {
   color: var(--accent-color);
 }
 
-.list .link .current {
-  color: var(--accent-color);
-}
 
 .header-container {
   display: flex;
@@ -175,11 +184,9 @@ body {
 /*-------------------------------------------hero----------------------------------------------*/
 
 .main-section {
-  height: 600px;
   width: auto;
   padding-top: 200px;
-  padding-left: 237px;
-  padding-right: 237px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--second-accent-color);
 }
@@ -244,7 +251,6 @@ body {
   color: var(--primary-text-color);
 }
 .item {
-  display: block;
   width: 270px;
   font-weight: 500;
   font-size: 16px;
@@ -266,25 +272,23 @@ body {
 
 .item-us {
   display: flex;
-  margin-bottom: 94px;
   text-align: center;
 }
 
 .item-can {
-  display: block;
   width: 370px;
 }
 
 .item-name {
   margin-bottom: 10px;
 }
-.item,
+.item:not(:last-child){
+  margin-right: 30px;
+}
 .item-can:not(:last-child) {
   margin-right: 30px;
 }
-.aside-img {
-  margin-bottom: 30px;
-}
+
 .aside-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -340,7 +344,6 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 .aside-box {
   width: 370px;
@@ -350,7 +353,6 @@ body {
 }
 
 .aside-item {
-  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -366,15 +368,14 @@ body {
 /*------------------------------------------footer----------------------------------------------*/
 
 .address {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
   letter-spacing: 0.03em;
   background-color: var(--second-accent-color);
 }
 .container-address {
-  height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  
 }
 
 .footer-address {
